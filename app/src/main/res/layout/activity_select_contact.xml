@@ -1,0 +1,69 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.eworkplaceapps.ed.SelectContact">
+
+    <include layout="@layout/status_bar" />
+    <include layout="@layout/a" />
+
+    <FrameLayout
+        android:id="@+id/select_contact_frame_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <RelativeLayout
+            android:id="@+id/relativePanel"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <include layout="@layout/loading_empty_view" />
+
+            <ListView
+                android:id="@+id/list"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_toLeftOf="@+id/quickscroll"
+                android:animationCache="false"
+                android:choiceMode="multipleChoice"
+                android:divider="@null"
+                android:drawSelectorOnTop="false"
+                android:overScrollMode="never"
+                android:scrollbars="none"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true"></ListView>
+
+            <com.eworkplaceapps.ed.quickscroll.QuickScroll
+                android:id="@+id/quickscroll"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvNoDataMsg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/no_data_msg"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <com.eworkplaceapps.ed.view.ProgressWheel
+            android:id="@+id/loading"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            wheel:matProg_barColor="@color/lightTeal"
+            wheel:matProg_progressIndeterminate="true" />
+    </FrameLayout>
+</LinearLayout>

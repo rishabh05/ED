@@ -1,0 +1,365 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/darkTeal"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/darkTeal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkTeal"
+                android:paddingLeft="@dimen/list_item_padding"
+                android:paddingRight="@dimen/list_item_padding_new"
+                android:paddingTop="@dimen/list_item_padding">
+
+                <FrameLayout
+                    android:layout_width="@dimen/profile_image_frame_layout_width"
+                    android:layout_height="@dimen/profile_image_frame_layout_height"
+                    android:layout_marginTop="@dimen/contact_image_view_margin">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/material_drawer_account_header_compact1"
+                        android:layout_height="@dimen/material_drawer_account_header_compact1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        app:biv_maskDrawable="@drawable/circle_mask" />
+
+                    <ImageView
+                        android:id="@+id/id_profile_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/ic_flag_badge"
+                        android:visibility="gone" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/profile_first_name"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="2dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/name_font_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/profile_last_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="2dp"
+                            android:layout_weight="7"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/name_font_size"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/profile_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/profile_title_left_margin"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/title_font_size" />
+
+                    <TextView
+                        android:id="@+id/profile_nick_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/nick_name_font_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="@dimen/time_zone_margin_right"
+                android:layout_marginTop="5dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/globe_layout_margin_left">
+
+                        <ImageView
+                            android:id="@+id/id_earth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/globe_icon" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_toRightOf="@+id/id_earth"
+                            android:gravity="clip_vertical"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/id_time_zone"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="5:30AM"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/time_font_size" />
+
+                                <TextView
+                                    android:id="@+id/id_time_zone_difference"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:paddingLeft="5dp"
+                                    android:textColor="@color/white"
+                                    android:textSize="@dimen/time_font_size"/>
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/id_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="-3dp"
+                                android:text="Monday"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/day_font_size" />
+
+                        </LinearLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/id_status"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:background="@drawable/textview_rounded_rectangle_shape"
+                        android:padding="5dp"
+                        android:text="Working Remotely"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/status_font_size"
+                        android:visibility="gone" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/profile_rounded_rectangle_shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/work_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_textview_rounded_rectangle_shape"
+                    android:paddingLeft="@dimen/contact_text_container_margin_left"
+                    android:text="@string/work"
+                    android:textColor="@color/color_contacts_textview"
+                    android:textSize="@dimen/heading_font_size" />
+
+
+                <LinearLayout
+                    android:id="@+id/id_contact_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/contact_container_margin_left"
+                    android:background="@drawable/profile_rounded_rectangle_shape"
+                    android:orientation="vertical"></LinearLayout>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/profile_rounded_rectangle_shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/personal_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_textview_rounded_rectangle_shape"
+                    android:paddingLeft="@dimen/contact_text_container_margin_left"
+                    android:text="@string/personal_text"
+                    android:textColor="@color/color_contacts_textview"
+                    android:textSize="@dimen/heading_font_size" />
+
+                <TextView
+                    android:id="@+id/txt_social"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/contact_container_margin_left"
+                    android:background="@color/lightGrey"
+                    android:text="@string/social"
+                    android:textColor="@color/lightTeal"
+                    android:textSize="14dp"
+                    android:textStyle="normal"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:id="@+id/social_profile_layout_id"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/lightGrey"
+                    android:paddingBottom="@dimen/contact_container_margin_left"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/id_facebook"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/social_img_margin"
+                        android:background="@drawable/ic_facebook"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/id_linked_in"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/social_img_margin"
+                        android:background="@drawable/ic_linked_in"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/id_skype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/social_img_margin"
+                        android:background="@drawable/ic_skype"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/id_twitter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/social_img_margin"
+                        android:background="@drawable/ic_twitter"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        android:id="@+id/id_whats_app"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:background="@drawable/ic_whatsapp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/id_social_media_view"
+                    android:layout_width="fill_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:visibility="gone"></View>
+
+                <LinearLayout
+                    android:id="@+id/id_personal_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/contact_container_margin_left"
+                    android:background="@drawable/profile_rounded_rectangle_shape"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/profile_rounded_rectangle_shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/notes_title"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_textview_rounded_rectangle_shape"
+                    android:paddingLeft="@dimen/contact_text_container_margin_left"
+                    android:text="@string/notes_text"
+                    android:textColor="@color/color_contacts_textview"
+                    android:textSize="@dimen/heading_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/id_admin_hr_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/contact_container_margin_left"
+                    android:background="@drawable/profile_rounded_rectangle_shape"
+                    android:orientation="vertical"></LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

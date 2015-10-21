@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_drag_drop_text_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkTeal"
+    android:orientation="horizontal"
+    android:padding="@dimen/fav_rearrange_txt_layout_padding"
+    android:visibility="gone">
+
+    <TextView
+        android:id="@+id/id_drag_drop_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/press_and_hold_to_rearrange_the_order"
+        android:textColor="@color/white" />
+</RelativeLayout>

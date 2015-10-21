@@ -1,0 +1,76 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/id_status_outer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-82dp"
+    android:background="#ffffff"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <LinearLayout
+        android:id="@+id/addNewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/topGrayStrip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/strip_height"
+            android:background="@color/lightGrey"/>
+
+        <EditText
+            android:id="@+id/invite_first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text_size"
+            android:maxLength="200"
+            android:maxEms="1"
+            android:layout_marginLeft="@dimen/edit_text_left_margin"
+            android:drawablePadding="@dimen/edit_text_padding"
+            android:inputType="text|textCapSentences"
+            android:textColorHint="@color/lightGrey"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/first_name_hint" />
+
+        <EditText
+            android:id="@+id/invite_last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text_size"
+            android:maxLength="200"
+            android:maxEms="1"
+            android:layout_marginLeft="@dimen/edit_text_left_margin"
+            android:drawablePadding="@dimen/edit_text_padding"
+            android:inputType="text|textCapSentences"
+            android:textColorHint="@color/lightGrey"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/last_name_hint" />
+
+        <EditText
+            android:id="@+id/invite_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/edit_text_size"
+            android:maxLength="256"
+            android:maxEms="1"
+            android:layout_marginLeft="@dimen/edit_text_left_margin"
+            android:drawablePadding="@dimen/edit_text_padding"
+            android:inputType="textEmailAddress"
+            android:textColorHint="@color/lightGrey"
+            android:textCursorDrawable="@drawable/cursor_color"
+            android:background="@drawable/apptheme_edit_text_holo_light"
+            android:hint="@string/email_hint" />
+
+        <View
+            android:id="@+id/bottomGrayStrip"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/strip_height"
+            android:background="@color/lightGrey"
+            android:orientation="horizontal" />
+    </LinearLayout>
+</LinearLayout>

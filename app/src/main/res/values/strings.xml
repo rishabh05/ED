@@ -1,0 +1,429 @@
+<resources>
+
+    <!--For PM Review-->
+    <string name="app_name">ewcPM(A2-5)</string>
+
+    <!--    &lt;!&ndash;    For QA Review &ndash;&gt;
+        <string name="app_name">ewcQA(A2-2)</string>-->
+
+    <!--For development -->
+    <!--        <string name="app_name">Connect(R)</string>-->
+
+    <!-- Sample menu -->
+    <string name="action_settings">Settings</string>
+
+    <!-- Drawer Items -->
+    <string name="drawer_item_compact_header">CompactHeader Drawer</string>
+    <string name="drawer_item_action_bar">ActionBar Drawer</string>
+    <string name="drawer_item_multi_drawer">Multi Drawer</string>
+    <string name="drawer_item_non_translucent_status_drawer">NonTranslucentStatus Drawer</string>
+    <string name="drawer_item_complex_header_drawer">ComplexHeader Drawer</string>
+    <string name="drawer_item_simple_fragment_drawer">SimpleFragment Drawer</string>
+    <string name="drawer_item_embedded_drawer_dualpane">Embedded Drawer 2-pane</string>
+    <string name="drawer_item_embedded_drawer_dualpane_desc">Embedded Drawer 2-pane\n(rotate device)</string>
+    <string name="drawer_item_fullscreen_drawer">FullScreen Drawer</string>
+    <string name="drawer_item_custom_container_drawer">CustomContainer Drawer</string>
+    <string name="drawer_item_home">Home</string>
+    <string name="drawer_item_free_play">Free Play</string>
+    <string name="drawer_item_custom">Custom</string>
+    <string name="drawer_item_section_header">Section Header</string>
+    <string name="drawer_item_settings">Settings</string>
+    <string name="drawer_item_help">Help</string>
+    <string name="drawer_item_open_source">Open Source</string>
+    <string name="drawer_item_contact">Contact</string>
+    <!--added by dheeraj-->
+    <string name="search_hint">Search</string>
+    <string name="empty_list_msg">No Results</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="contact">Contact</string>
+    <string name="company_details">Company Details</string>
+    <string name="personal">Personal</string>
+    <string name="notes_text">Notes</string>
+    <string name="notes_label_text">notes</string>
+
+
+    <string name="admin_hr">Admin / HR</string>
+    <string name="title_activity_edit_profile">EditProfileActivity</string>
+    <string name="work">Work</string>
+    <string name="work_label">work</string>
+    <string name="work_phone_no">+1(731)243-4430 ext. 140</string>
+    <string name="title_activity_favorites_fragment" translatable="false">FavoritesFragment</string>
+    <string name="title_activity_my_teams_fragment">MyTeamsFragment</string>
+    <string name="title_activity_status_fragment">StatusFragment</string>
+    <string name="title_activity_more_fragment">MoreFragment</string>
+    <string name="personal_text">Personal</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string-array name="alphabet">
+        <item>A</item>
+        <item>B</item>
+        <item>C</item>
+        <item>D</item>
+        <item>E</item>
+        <item>F</item>
+        <item>G</item>
+        <item>H</item>
+        <item>I</item>
+        <item>J</item>
+        <item>K</item>
+        <item>L</item>
+        <item>M</item>
+        <item>N</item>
+        <item>O</item>
+        <item>P</item>
+        <item>Q</item>
+        <item>R</item>
+        <item>S</item>
+        <item>T</item>
+        <item>U</item>
+        <item>V</item>
+        <item>W</item>
+        <item>X</item>
+        <item>Y</item>
+        <item>Z</item>
+        <item>#</item>
+    </string-array>
+    <string name="edit_contact">Contact</string>
+    <string name="edit_work">Work</string>
+    <string name="edit_notes">Notes</string>
+    <string name="edit_company_details">Company Details</string>
+    <string name="edit_department">Department</string>
+    <string name="edit_reports_to">Reports To</string>
+    <string name="location">Location</string>
+    <string name="action_share">Share</string>
+    <string name="action_chat">Chat</string>
+    <string name="teams">Teams</string>
+    <string name="edit_personal">Personal</string>
+    <string name="edit_admin_hr">Admin / HR</string>
+    <string name="delete_cont">Delete Contact</string>
+    <string name="make_admin">Make Admin</string>
+    <string name="remove_as_admin">Remove as Admin</string>
+    <string name="delete">Delete</string>
+    <string name="title_activity_deprtment_list">Department</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_done">Done</string>
+    <string name="title_activity_location_list">Location</string>
+    <string name="title_activity_reports_to">ReportsTo</string>
+    <string name="title_activity_teams_list">TeamsList</string>
+    <string name="teams_title">Teams</string>
+    <string name="edt_profile_home_text">home</string>
+    <string name="address_line1">Address Line 1</string>
+    <string name="address_line2">Address Line 2</string>
+    <string name="address_line3">Address Line 3</string>
+    <string name="address_line4">Address Line 4</string>
+    <string name="reports_to">Reports To</string>
+    <string name="dept">Department</string>
+    <string name="title_activity_contact_type">ContactType</string>
+    <string name="contact_type">Label</string>
+    <string name="title_activity_email_type">EmailType</string>
+    <string name="title_activity_personal_phone_label">PersonalPhoneLabel</string>
+    <string name="title_activity_emergency_phone_list" translatable="false">EmergencyPhoneList</string>
+    <string name="title_activity_emergency_email_list">EmergencyEmailList</string>
+    <string name="action_update">Update</string>
+    <string name="title_activity_select_contact">SelectContact</string>
+    <string name="title_activity_add_contact">AddContact</string>
+    <string name="action_sms">SMS</string>
+    <string name="action_email">Email</string>
+    <string name="take_photo">Take Photo</string>
+    <string name="choose_photo">Choose Photo</string>
+    <string name="reset_to_default">Reset to Default</string>
+    <string name="cancel">Cancel</string>
+    <string name="title_activity_map">Map</string>
+
+    <string name="action_follow_up">Followup</string>
+    <string name="team_info_title">Team Info</string>
+
+    <string name="employees">Employees</string>
+    <string name="delete_team">Delete Team</string>
+    <string name="manager_type">Manager</string>
+    <string name="description">Description</string>
+    <string name="phone">phone</string>
+    <string name="employee">Employee</string>
+    <string name="edit_team_info_title">Info(Team)</string>
+
+    <string name="email">email</string>
+    <string name="add_new_team">New Team</string>
+    <string name="edit_team_address">address</string>
+    <string name="edt_team_location_add_text">work</string>
+    <string name="my_follow_ups">My Followups</string>
+    <string name="by_status">By Status</string>
+    <string name="by_department">By Department</string>
+    <string name="by_team">By Teams</string>
+    <string name="by_location">By Location</string>
+    <string name="address_txt">address</string>
+    <string name="title_activity_login">Login</string>
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <!--Status Tabs-->
+    <string name="text_when">When?</string>
+    <string name="quick_select">Quick Select</string>
+    <string name="this_morning">This Morning</string>
+    <string name="this_afternoon">This Afternoon</string>
+    <string name="whats_your_status">What\'s your status?</string>
+    <string name="all_day_today">All Day Today</string>
+    <string name="all_day_tomorrow">All Day Tomorrow</string>
+    <string name="or">OR</string>
+    <string name="all_day">All Day</string>
+    <string name="starts">Starts</string>
+    <string name="date">Date</string>
+    <string name="time">Time</string>
+    <string name="select_range">Select a Range</string>
+
+    <string name="edit_start_date">start date</string>
+    <string name="add_another_employee">Add another employee</string>
+    <string name="social">social</string>
+    <string name="title_activity_other_employee">OtherEmployeeActivity</string>
+    <string name="title_activity_emergency_contact_type">EmergencyContactTypeActivity</string>
+
+    <string name="no_data_msg">No employees found.</string>
+    <string name="no_followups_msg">You do not have any followups.</string>
+
+    <!--invite employee hints-->
+    <string name="first_name_hint">First Name</string>
+    <string name="last_name_hint">Last Name</string>
+    <string name="email_hint">Email</string>
+    <!--Edit Profile-->
+    <string name="job_title_hint">Job Title</string>
+    <string name="nick_name">Nick Name</string>
+
+
+    <!--invite employee validation msg-->
+    <string name="fname_required">First Name is required.</string>
+    <string name="lname_required">Last Name is required.</string>
+    <string name="email_required">Email is required.</string>
+    <string name="first_name_last_name_email_required">First Name, Last Name and Email are required.</string>
+    <string name="duplicate_emails_not_allowed">Each employee in your company must have an unique email address.</string>
+
+    <string name="first_name_last_name_required">First Name and Last Name are required.</string>
+    <string name="first_name_email_required">First Name and Email are required.</string>
+    <string name="last_name_email_required">Last Name and Email are required.</string>
+    <string name="invalid_email">Invalid email address.</string>
+    <string name="no_network">There is no connection to the network.</string>
+
+    <!--invite employee server msg-->
+    <string name="success_title">Success!</string>
+    <string name="error_title">Error!</string>
+    <string name="invitation_has_send_to_one">Invitation has been sent. Would you like to add another employee?</string>
+    <string name="invitations_have_send">Invitations have been sent to</string>
+    <string name="more_employees">employees invited.</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="duplicate_employee">An employee with this email address has already been invited to your company.</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+
+    <!--action bar titles-->
+    <string name="all_employee_title">All Employees</string>
+    <string name="favorite_title">Favorites</string>
+    <string name="my_teams_title">My Teams</string>
+    <string name="my_status_title">My Status</string>
+    <string name="more_title">More</string>
+    <string name="by_location_title">By Location</string>
+    <string name="by_department_title">By Department</string>
+    <string name="by_team_title">By Teams</string>
+    <string name="by_status_title">By Status</string>
+    <string name="my_followups_title">My Followups</string>
+    <string name="invite_employee_title">Invite Employee</string>
+    <string name="select_contact_title">Select Contact</string>
+    <string name="select_contacts_title">Select Contacts</string>
+    <string name="info_title">Info</string>
+    <string name="new_status_title">New Status</string>
+    <string name="new_location_title">New Location</string>
+    <string name="new_department_title">New Department</string>
+    <string name="new_team_title">New Team</string>
+    <string name="location_title">Location</string>
+    <string name="department_title">Department</string>
+    <string name="team_title">Team</string>
+    <string name="status_title">Status</string>
+
+    <!--favorite section-->
+    <string name="no_favorite_msg">You do not have any favorites.</string>
+    <string name="no_contact_number">The employee selected does not have a phone number to select as a favorite.</string>
+
+
+    <!--my teams strings-->
+    <string name="no_team_msg">You are not a part of any teams.</string>
+    <string name="no_emp_found_msg">No employees found.</string>
+
+    <!--my status strings-->
+    <string name="no_status_msg">You have not shared any status updates.</string>
+    <string name="delete_alert">Are you sure want to delete this status?</string>
+    <string name="end_time_required">End time is required.</string>
+    <string name="start_end_time_cannot_same">Start time and end time cannot be the same.</string>
+    <string name="add_details_here">Add details here</string>
+
+    <!--common by monika-->
+    <string name="edit">Edit</string>
+    <string name="action_search">Search</string>
+
+    <!--Add string for contact delete alert-->
+    <string name="delete_contact_message">Are you sure you want to delete this contact?</string>
+    <string name="delete_contact_title"> Delete Contact </string>
+
+    <string name="delete_alert_title">Delete Status</string>
+    <string name="delete_title">Delete</string>
+    <string name="cancel_title">Cancel</string>
+    <string name="group_today">Today</string>
+    <string name="group_tomorrow">Tomorrow</string>
+    <string name="group_future">Future</string>
+
+    <!--more strings-->
+    <string name="no_location">There are no locations.</string>
+    <string name="no_department">There are no departments.</string>
+    <string name="no_teams">There are no teams.</string>
+    <string name="no_status">There are no statuses.</string>
+
+    <!--Dheeraj Friday, August 28, 2015-->
+    <string name="info">Info</string>
+    <string name="choose_an_email_client">Choose an Email client</string>
+    <string name="notes_hint">Notes</string>
+    <string name="phone_title">Phone</string>
+    <string name="select_any_one_to_continue">Select one to continue.</string>
+    <string name="list_work">work</string>
+    <string name="list_mobile">mobile</string>
+    <string name="list_other">other</string>
+    <string name="notes">Notes</string>
+    <string name="no_internet_connection">There is no connection to the network.</string>
+    <string name="select_file">Select File</string>
+    <string name="secondary_text_label">secondary</string>
+    <string name="primary_text_label">primary</string>
+    <string name="name_hint">Name</string>
+    <string name="skype_id_hint">Skype ID</string>
+    <string name="first_name_and_last_name_required">First Name and Last Name are required.</string>
+    <string name="first_name_required">First Name is required.</string>
+    <string name="last_name_required">Last Name is required.</string>
+    <string name="invalid_email_address">Invalid email address.</string>
+    <string name="dialog_text_ok">OK</string>
+    <string name="changes_saved_except_fn_ln_pp">All changes are saved except first name, last name and profile picture.</string>
+    <string name="changes_saved_except_fn_ln">All changes are saved except first name and last name.</string>
+    <string name="changes_saved_except_fn_pp">All changes are saved except first name and profile picture.</string>
+    <string name="changes_saved_except_ln_pp">All changes are saved except last name and profile picture.</string>
+    <string name="changes_saved_except_fn">All changes are saved except first name.</string>
+    <string name="changes_saved_except_ln">All changes are saved except last name.</string>
+    <string name="changes_saved_except_pp">All changes are saved except profile picture.</string>
+    <!--Twitter-->
+    <string name="twitter_consumer_key">tKpiw79L2zc7t1IKUgjRjecWI</string>
+    <string name="twitter_consumer_secret">d9MfembswbRLoGuK44X9WyGutEJGkshxykUqgFUnl3Jw5JDD2b</string>
+    <string name="welcome">Welcome back %s!</string>
+    <string name="already_logged">User already logged into twitter with %s.</string>
+    <string name="logged_out">Logout success</string>
+    <string name="loading_title">Loading…</string>
+    <string name="login_dialog_message">Wait for it…</string>
+
+    <!--monika runwal 28/8-->
+    <string name="phone_hint">Phone</string>
+    <string name="delete_location">Delete Location</string>
+    <string name="delete_department">Delete Department</string>
+    <string name="are_sure_to_delete">Are you sure you want to delete</string>
+    <string name="no_employee">No employees.</string>
+    <string name="member">Members</string>
+
+    <!--add-edit group-->
+    <!--location-->
+    <string name="name_required_for_loc">Name is required to create a Location.</string>
+    <string name="manager_required_for_loc">Manager is required to create a Location.</string>
+    <string name="address_required_for_loc">Address is required to create a Location.</string>
+    <string name="name_address_required_for_loc">Name and Address are required to create a Location.</string>
+    <string name="manager_address_required_for_loc">Manager and Address are required to create a Location.</string>
+    <string name="name_manager_required_for_loc">Name and Manager are required to create a Location.</string>
+    <string name="name_manager_address_required_for_loc">Name, Address and Manager are required to create a Location.</string>
+    <!--department-->
+    <string name="name_required_for_dept">Name is required to create a Department.</string>
+    <string name="manager_required_for_dept">Manager is required to create a Department.</string>
+    <string name="name_manager_required_for_dept">Name and Manager are required to create a Department.</string>
+    <!--team-->
+    <string name="name_required_for_team">Name is required to create a Team.</string>
+    <string name="manager_required_for_team">Manager is required to create a Team.</string>
+    <string name="name_manager_required_for_team">Name and Manager are required to create a Team.</string>
+
+    <!--select contacts-->
+    <string name="plz_select_first">Please select at least one employee.</string>
+    <string name="select_contact">select contact to perform action.</string>
+
+    <!-- Login -->
+    <string name="authentication_message">Please wait, Authenticating User...</string>
+    <string name="password_auth_message">Password is required.</string>
+    <string name="invalid_email_message">Invalid email</string>
+    <string name="required_email_message">Email is required.</string>
+    <string name="register_device_message">Registering Device...</string>
+    <string name="db_initialize_message">Database is being initialized on the server.</string>
+    <string name="twitter_login">Twitter</string>
+    <string name="linked_in_login">LinkedIn</string>
+    <!-- downloading database message at initialization time-->
+    <string name="db_downloading_complete_message">Downloading Database Completed</string>
+    <string name="db_downloading_message">Downloading your database.</string>
+
+
+    <!--Utils-->
+    <string name="no_email_client_msg">Please set up a Mail account in order to send email.</string>
+    <string name="no_email_client_title">No Mail Accounts</string>
+    <string name="send_mail">Send mail...</string>
+    <string name="share_email_subject">Contact Details</string>
+    <string name="title_activity_login_to_facebook">LoginToFacebookActivity</string>
+    <!--Facebook Id-->
+    <string name="app_id">1700735766815124</string>
+    <string name="address_not_found">Address not found</string>
+    <string name="offline_mode_message">You are currently offline. Any changes made will not be saved.</string>
+    <string name="open_in_google_map">Open in Google Maps</string>
+    <string name="copy_address">Copy Address</string>
+    <!--    <string name="select_at_least_one_to_continue">Select atleast one to continue!</string>-->
+    <string name="title_activity_phone_list">Phone</string>
+    <string name="title_activity_email_list">Email</string>
+    <string name="title_activity_teams">Teams</string>
+    <string name="title_activity_locations">Location</string>
+
+
+    <string name="work_label_list">work</string>
+    <string name="other_label_list">other</string>
+    <string name="personal_label_list">personal</string>
+    <string name="home_label_list">home</string>
+    <string name="mobile_label_list">mobile</string>
+
+
+    <string name="emergency_contact_type">Emergency Contact Type</string>
+    <string name="primary">primary</string>
+    <string name="secondary">secondary</string>
+    <string name="select_manager">Select Manager</string>
+
+    <string name="login_password_hint">Password</string>
+    <string name="login_email_hint">Email</string>
+    <string name="facebook_label_list">Facebook</string>
+    <string name="linkedin_label_list">LinkedIn</string>
+    <string name="skype_label_list">Skype</string>
+    <string name="twitter_label_list">Twitter</string>
+
+    <string name="team_label">Team</string>
+    <string name="social_profile_label">social profile</string>
+    <string name="birth_day">birthday</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="emergency_contact_plus">emergency contact</string>
+    <string name="login_email">Email</string>
+    <string name="login_password">Password</string>
+    <string name="log_in">Log In</string>
+    <string name="press_and_hold_to_rearrange_the_order">Press and hold to rearrange order</string>
+    <!-- App Message-->
+    <string name="required_field">required.</string>
+    <string name="name_required">Name is required.</string>
+    <string name="first_name_is_required">First name is required.</string>
+    <string name="last_name_is_required">Last name is required.</string>
+    <string name="duplicate_name">Duplicate Name</string>
+    <string name="password_required">Password is required.</string>
+    <string name="role_id_required">RoleId is required.</string>
+    <string name="reference_id_required">Reference is required.</string>
+    <string name="length_error">STRING length should be lesser.</string>
+    <string name="invalid_app_version_error">You are running an older version of Issue Tracker. In order to connect to the Issue Tracker server, please update the application.</string>
+    <string name="database_error">This is database error.</string>
+    <string name="concurrency_error">This item has been updated or deleted by another user. Please reload the item and then retry your operation.</string>
+    <string name="security_error">You do not have permission to perform this operation.</string>
+    <string name="re_login_error">This is relogin error.</string>
+    <string name="invalid_device_id_error">This is invalid device ID error.</string>
+    <string name="not_implemented_error">This is not Implemented error.</string>
+    <string name="invalid_database_version">This is invalid database version error.</string>
+    <string name="initialization_failed">Error occurred in initialization</string>
+    <string name="system_error">Lost connection to server.Please try again.</string>
+    <string name="employee_references_exit">The employee you wish to delete is a manager. Please select a new manager, before deleting this employee.</string>
+
+</resources>

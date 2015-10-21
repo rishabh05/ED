@@ -1,0 +1,144 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/edt_profile_image_outer_layout_margin_top"
+                android:paddingLeft="@dimen/edt_profile_image_outer_layout_margin_left"
+                android:paddingTop="@dimen/edt_profile_image_outer_layout_margin_top"
+                android:weightSum="10">
+
+                <FrameLayout
+                    android:layout_width="@dimen/material_drawer_account_header_compact1"
+                    android:layout_height="@dimen/material_drawer_account_header_compact1">
+
+                    <com.mikepenz.materialdrawer.view.BezelImageView
+                        android:id="@+id/profile_image"
+                        android:layout_width="@dimen/material_drawer_account_header_compact1"
+                        android:layout_height="@dimen/material_drawer_account_header_compact1"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_gravity="center_vertical"
+                        android:clickable="true"
+                        android:scaleType="fitXY"
+                        app:biv_maskDrawable="@drawable/circle_mask" />
+
+                    <ImageView
+                        android:id="@+id/id_edit_following"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end|bottom"
+                        android:layout_marginBottom="2dp"
+                        android:layout_marginRight="2dp"
+                        android:src="@drawable/ic_flag_badge"
+                        android:visibility="gone"/>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edt_profile_text_layout_margin_left"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/profile_first_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="firstName"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/edit_prfile_edit_text_size" />
+
+                    <TextView
+                        android:id="@+id/profile_last_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="lastName"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/edit_prfile_edit_text_size" />
+
+                    <TextView
+                        android:id="@+id/profile_title"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="jobTitle"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/edit_prfile_edit_text_size" />
+
+                    <TextView
+                        android:id="@+id/profile_nick_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+
+                        android:ellipsize="end"
+                        android:lines="1"
+                        android:singleLine="true"
+                        android:text="nickName"
+                        android:textColor="@color/darkGrey"
+                        android:textSize="@dimen/edit_prfile_edit_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/lightGrey"
+                android:gravity="clip_horizontal"
+                android:padding="@dimen/edit_profile_contact_text_view_padding">
+
+                <TextView
+                    android:id="@+id/notes_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/edit_profile_contact_text_view_margin_left"
+                    android:text="@string/edit_notes"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/edit_profile_contact_text_view_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/notes"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:background="@drawable/edit_text_holo_light"
+                android:inputType="textMultiLine"
+                android:padding="@dimen/edit_text_common_padding"
+                android:singleLine="false"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:textSize="@dimen/edit_prfile_edit_text_size" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

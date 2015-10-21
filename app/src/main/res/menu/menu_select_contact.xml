@@ -1,0 +1,36 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.eworkplaceapps.ed.SelectContact">
+
+    <item
+        android:id="@+id/action_search"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/action_search"
+        android:icon="@drawable/ic_search_white"/>
+    <item
+        android:id="@+id/add_contact_done"
+        android:orderInCategory="100"
+        app:showAsAction="always"
+        android:title="@string/action_done"
+        android:icon="@drawable/ic_action_accept"/>
+
+    <item android:id="@+id/action_chat"
+        android:title="@string/action_chat"
+        android:enabled="false"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_sms"
+        android:title="@string/action_sms"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_email"
+        android:title="@string/action_email"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+    <item android:id="@+id/action_follow_up"
+        android:title="@string/action_follow_up"
+        android:orderInCategory="100"
+        app:showAsAction="never" />
+</menu>

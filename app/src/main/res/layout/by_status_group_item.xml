@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/footerPanel"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="1dp"
+    android:background="@color/white">
+
+
+    <RelativeLayout
+        android:id="@+id/titlePanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/by_status_title_panel_height"
+        android:background="@color/darkTeal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textTitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/by_status_title_left_margin"
+            android:layout_marginRight="@dimen/by_status_title_right_margin"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/white"
+            android:textSize="@dimen/by_status_title_font"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/id_expand_view"
+        android:layout_width="@dimen/by_status_group_img_size"
+        android:layout_height="@dimen/by_status_group_img_size"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_gravity="end|bottom"
+        android:layout_marginRight="@dimen/by_status_group_img_right_margin"
+        android:layout_marginTop="@dimen/by_status_group_img_top_margin"
+        android:background="@drawable/by_status_close_button_background"
+        android:src="@drawable/arrow_expand" />
+</FrameLayout>

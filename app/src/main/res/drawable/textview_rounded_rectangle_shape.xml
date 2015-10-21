@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/shape_id">
+        <shape android:shape="rectangle">
+
+            <corners android:radius="@dimen/search_widght_corner_radius" />
+            <solid android:color="@color/colorAccent" />
+
+        </shape>
+    </item>
+
+</layer-list>

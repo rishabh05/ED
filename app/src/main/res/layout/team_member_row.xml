@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_outerLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/profile_rounded_rectangle_shape"
+    android:orientation="horizontal">
+
+
+    <FrameLayout
+        android:id="@+id/id_image_frame_layout"
+        android:layout_width="@dimen/image_frame_layout_width"
+        android:layout_height="@dimen/image_frame_layout_height"
+        android:layout_marginLeft="@dimen/contact_image_view_margin_left"
+        android:layout_marginTop="@dimen/contact_image_view_margin_top">
+
+        <com.mikepenz.materialdrawer.view.BezelImageView
+            android:id="@+id/profile_image_view"
+            android:layout_width="@dimen/material_drawer_account_header_compact1"
+            android:layout_height="@dimen/material_drawer_account_header_compact1"
+            android:scaleType="fitXY"
+            app:biv_maskDrawable="@drawable/circle_mask" />
+
+    </FrameLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/first_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/last_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/first_name"
+            android:ems="3"
+            android:lines="1"
+            android:singleLine="true"
+            android:textColor="@color/black"
+            android:textSize="17dp" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/first_name"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/black"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+</LinearLayout>

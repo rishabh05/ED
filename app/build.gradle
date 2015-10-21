@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 22
+    buildToolsVersion '22.0.1'
+
+    defaultConfig {
+        applicationId "com.eworkplaceapps.ed"
+        minSdkVersion 15
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled = true
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile project(':library')
+    compile project(':datepickerlibrary')
+    compile 'com.android.support:appcompat-v7:22.1.1'
+    compile('com.mikepenz.aboutlibraries:library:4.7.1@aar') {
+        transitive = true
+    }
+    compile 'com.google.android.gms:play-services:7.3.0'
+    compile 'com.mikepenz.iconics:octicons-typeface:2.2.0@aar'
+    compile 'com.squareup.picasso:picasso:2.5.2'
+    compile 'com.googlecode.android-query:android-query:0.25.9'
+    compile project(':employeedirectory')
+    compile 'com.nhaarman.listviewanimations:lib-core:3.1.0@aar'
+    compile 'com.nhaarman.listviewanimations:lib-manipulation:3.1.0@aar'
+    compile 'com.nhaarman.listviewanimations:lib-core-slh:3.1.0@aar'
+    compile 'com.android.support:multidex:1.0.0'
+}

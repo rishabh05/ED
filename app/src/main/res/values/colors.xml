@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Action bar color code first 2 line-->
+    <!--color of action bar-->
+    <color name="colorPrimary">#00A091</color>
+    <!--#377255-->
+    <!--color of status bar-->
+    <color name="colorPrimaryDark">#009082</color>
+    <!--#1F8A70     <color name="colorPrimaryDark">#009082</color> -->
+    <!--#26503B-->
+    <color name="colorPrimaryLight">#32b3a7</color>
+    <!--#C4C9E8-->
+    <color name="colorAccent">#02A8F3</color>
+    <color name="material_drawer_selected_text">#536EEA</color>
+    <color name="material_drawer_dark_selected_text">#536EEA</color>
+    <color name="green">#009587</color>
+    <color name="color_gray_pressed">#cfd2d7</color>
+    <color name="color_black_light">#99000000</color>
+    <color name="search_widget_bg">#193B24</color>
+    <color name="color_search_widght_hint">#FF9900</color>
+    <color name="color_pinnedHeader">#C9C9EB</color>
+    <color name="profile_background">#223751</color>
+
+    <color name="color_contact_screen_text">#377255</color>
+    <color name="color_all_emp_list_text">#C9C9CB</color>
+    <color name="color_all_emp_list_image">#E2E2E4</color>
+    <color name="color_grey_white">#D2D3D8</color>
+
+    <color name="color_cyan">#47D1FF</color>
+    <color name="color_cyan_light">#66FFFF</color>
+    <color name="color_edit_contact_screen_text">#1F8A70</color>
+    <color name="card_shadow">#D4D4D4</color>
+    <color name="black_overlay">#60000000</color>
+    <color name="white_overlay">#40FFFFFF</color>
+    <color name="color_view_profile_bk">#CACDD3</color>
+    <color name="yellow">#ffff00</color>
+    <color name="orange_press">#F88017</color>
+    <color name="red_press">#990000</color>
+
+    <!--new colors on 15/07/2015-->
+    <color name="color_dark_red">#DF3921</color>
+    <!--#E60000-->
+    <color name="color_contacts_textview">#DF3921</color>
+    <!--#E61616-->
+    <color name="red">#DF3921</color>
+    <color name="lightGrey">#DCDCDC</color>
+    <color name="highlighterGrey">#e6e6e6</color>
+    <color name="darkGrey">#B4B4B4</color>
+    <color name="lightTeal">#00A091</color>
+    <color name="darkTeal">#2E4E52</color>
+    <color name="orange">#FFA500</color>
+    <!--#E1A500-->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+
+    <!--status colors-->
+    //business_trip
+    <color name="a">#AA78E6</color>
+    //in office
+    <color name="b">#00D7D2</color>
+    //offsite meeting
+    <color name="c">#00C800</color>
+    //on vacation
+    <color name="d">#FF7D00</color>
+    //out sick
+    <color name="e">#8C0000</color>
+    //working remotely
+    <color name="f">#28AAE1</color>
+    //other
+    <color name="g">#008282</color>
+
+    <color name="status_scr_status_txt">#515151</color>
+    <color name="status_scr_status_time">#A5A5A5</color>
+    <color name="status_scr_new_status_panel">#B5B591</color>
+    <color name="color_new_status_text">#A9A9A9</color>
+
+</resources>

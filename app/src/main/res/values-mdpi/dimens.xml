@@ -1,0 +1,221 @@
+<resources>
+
+    <dimen name="index_bar_view_text_size">12sp</dimen>
+    <dimen name="index_bar_view_width">20dp</dimen>
+    <dimen name="index_bar_view_margin">1dp</dimen>
+    <dimen name="search_widght_layout_padding">11dp</dimen>
+    <dimen name="search_widght_corner_radius">5dp</dimen>
+    <dimen name="search_widget_margin">5dp</dimen>
+    <dimen name="contact_image_view_margin">10dp</dimen>
+    <dimen name="contact_list_view_padding">10dp</dimen>
+    <dimen name="list_item_padding">8dp</dimen>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="time_zone_margin_left">6dp</dimen>
+    <dimen name="time_zone_margin_right">12dp</dimen>
+    <dimen name="contact_listview_height">120dp</dimen>
+    <dimen name="contact_textview_padding">0dp</dimen>
+    <dimen name="profile_textview_left_radius">5dp</dimen>
+    <dimen name="profile_textview_right_radius">5dp</dimen>
+    <dimen name="row_text_align_to_profile_image">8dp</dimen>
+    <dimen name="action_bar_title_size">20sp</dimen>
+    <dimen name="contact_container_margin_left">8dp</dimen>
+    <dimen name="contact_text_container_margin_left">8dp</dimen>
+    <dimen name="contact_image_view_margin_left">14dp</dimen>
+    <dimen name="contact_image_view_margin_top">8dp</dimen>
+    <dimen name="edit_company_details_top_margin">5dp</dimen>
+    <dimen name="location_value_txt_font_size">15sp</dimen>
+    <dimen name="delete_button_margin_top">15dp</dimen>
+    <dimen name="delete_button_margin_bottom">5dp</dimen>
+    <dimen name="delete_button_padding_left">49dp</dimen>
+    <dimen name="delete_button_padding_right">10dp</dimen>
+    <dimen name="teams_title_font">24sp</dimen>
+    <!--Edit Profile-->
+    <dimen name="edt_profile_image_outer_layout_margin_left">8dp</dimen>
+    <dimen name="edt_profile_image_outer_layout_margin_top">8dp</dimen>
+    <dimen name="edt_profile_image_frame_layout_margin_top">5dp</dimen>
+    <dimen name="edt_profile_text_layout_margin_left">8dp</dimen>
+    <dimen name="edit_profile_contact_text_view_padding">5dp</dimen>
+    <dimen name="edit_profile_contact_text_view_size">15sp</dimen>
+    <dimen name="edit_profile_contact_text_view_margin_left">10dp</dimen>
+    <dimen name="edit_profile_contact_container_margin_left">16dp</dimen>
+    <dimen name="edit_profile_contact_phn_text_margin_left">12dp</dimen>
+    <dimen name="edit_profile_contact_phn_layout_margin_left">15dp</dimen>
+    <dimen name="edit_profile_header_txt_margin_left">10dp</dimen>
+    <dimen name="edit_profile_notes_layout_margin_left">6dp</dimen>
+
+
+    <dimen name="edit_profile_contact_view_margin_top">5dp</dimen>
+    <dimen name="edit_profile_contact_view_margin_bottom">5dp</dimen>
+    <dimen name="edit_profile_contact_common_container_layout_margin_left">10dp</dimen>
+    <dimen name="edit_profile_contact_email_text_margin_left">7dp</dimen>
+    <dimen name="edit_profile_contact_company_details_layout_padding">5dp</dimen>
+    <dimen name="edit_profile_contact_company_detail_text_margin_left">10dp</dimen>
+    <dimen name="edit_profile_contact_company_detail_text_size">15sp</dimen>
+    <dimen name="edit_profile_contact_dept_layout_margin_left">50dp</dimen>  <!--17-6-->
+    <dimen name="edit_profile_contact_dept_value_text_size">15sp</dimen>
+    <dimen name="edit_profile_contact_view_height">2dp</dimen>
+    <dimen name="edit_profile_contact_dept_view_margin_top">2dp</dimen>
+    <dimen name="edit_profile_contact_reports_to_margin_left">44dp</dimen>
+    <dimen name="edit_profile_contact_reports_to_txt_size">15sp</dimen>
+    <dimen name="edit_profile_contact_reports_to_view_margin_top">2dp</dimen>
+    <dimen name="edit_profile_contact_reports_to_view_height">2dp</dimen>
+    <dimen name="edit_profile_contact_loc_layout_margin_left">44dp</dimen>
+    <dimen name="edit_profile_contact_loc_txt_value_size">18sp</dimen>
+    <dimen name="personal_text_view_margin_left">34dp</dimen>
+    <dimen name="admin_hr_margin_left">34dp</dimen>
+    <dimen name="start_date_margin_left">40dp</dimen>
+    <dimen name="personal_phone_margin_left">10dp</dimen>
+    <dimen name="personal_text_size">15sp</dimen>
+    <dimen name="admin_hr_text_size">15sp</dimen>
+    <!-- profile activity font size -->
+    <dimen name="name_font_size">17sp</dimen>
+    <!--15sp-->
+    <dimen name="nick_name_font_size">15sp</dimen>
+    <!--12sp-->
+    <dimen name="title_font_size">15sp</dimen>
+    <!--14sp-->
+    <dimen name="time_font_size">11sp</dimen>
+    <!--10sp-->
+    <dimen name="day_font_size">12sp</dimen>
+    <!--11sp-->
+    <dimen name="status_font_size">14sp</dimen>
+    <dimen name="view_profile_globe_margin_top">10dp</dimen>
+    <dimen name="heading_font_size">14sp</dimen>
+    <dimen name="globe_layout_margin_left">2dp</dimen>
+    <dimen name="type_font_size">14sp</dimen>
+    <dimen name="value_font_size">17sp</dimen>
+    <dimen name="social_img_margin">10dp</dimen>
+    <dimen name="nick_name_left_margin">15dp</dimen>
+    <dimen name="profile_tile_margin_left">12dp</dimen>
+    <dimen name="reports_to_radio_bt_margin_left">5dp</dimen>
+    <dimen name="image_reportsto_frame_layout_height">80dp</dimen>
+    <dimen name="image_reportsto_frame_layout_width">80dp</dimen>
+    <dimen name="reports_to_radio_bt_padding_right">8dp</dimen>
+    <dimen name="edit_prfile_edit_text_size">15dp</dimen>
+    <dimen name="emerg_contact_view_bottom_margin">10dp</dimen>
+    <dimen name="emerg_contact_view_top_margin">8dp</dimen>
+    <dimen name="emerg_contact_view_left_margin">15dp</dimen>
+    <dimen name="home_margin_top">15dp</dimen>
+    <dimen name="home_bottom_view_margin_top">12dp</dimen>
+    <dimen name="home_bottom_view_margin_left">13dp</dimen>
+    <dimen name="all_view_margin_left">13dp</dimen>
+    <dimen name="date_bottom_view_margin_top">10dp</dimen>
+    <dimen name="phn_botton_margin_top">2dp</dimen>
+    <dimen name="birth_day_view_margin_top">10dp</dimen>
+    <dimen name="birth_day_txt_valueMargin_left">10dp</dimen>
+    <dimen name="start_date_text_size">15sp</dimen>
+    <dimen name="home_edit_text_verticle_view_padding_bottom">2dp</dimen>
+    <dimen name="reports_to_image_height_weight">60dp</dimen>
+    <dimen name="container_margin_top">5dp</dimen>
+    <dimen name="strip_height">25dp</dimen>
+    <dimen name="edit_team_contact_margin_left">45dp</dimen>
+    <dimen name="add_team_description_text_size">22dp</dimen>
+
+
+    <dimen name="all_emp_view_margin_left">8dp</dimen>
+    <dimen name="profile_image_frame_layout_width">78dp</dimen>
+    <dimen name="profile_image_frame_layout_height">78dp</dimen>
+    <dimen name="profile_items_margin_left">12dp</dimen>
+    <dimen name="add_employee_to_team_margin_top">5dp</dimen>
+    <dimen name="delete_button_edit_team_margin_bottom">10dp</dimen>
+    <dimen name="edt_location_margin_top">5dp</dimen>
+    <dimen name="edt_location_margin_bottom">10dp</dimen>
+    <dimen name="edit_location_plus_address_margin_bottom">12dp</dimen>
+    <dimen name="edit_team_email_layout_left_margin">48dp</dimen>
+    <dimen name="edit_text_desc_left_margin">-1dp</dimen>
+    <dimen name="edit_text_email_left_margin">-2dp</dimen>
+    <dimen name="profile_title_left_margin">1dp</dimen>
+    <!--Status Tab-->
+    <dimen name="text_status_title_margin">5dp</dimen>
+    <dimen name="text_status_text_size">20sp</dimen>
+    <dimen name="status_list_height">200dp</dimen>
+    <dimen name="text_when_layout_margin">5dp</dimen>
+    <dimen name="text_when_text_size">20sp</dimen>
+    <dimen name="when_sub_panel_height">80dp</dimen>
+    <dimen name="text1_margin">5dp</dimen>
+    <dimen name="text1_text_size">15sp</dimen>
+    <!--Common to all-->
+    <dimen name="horizontal_view_width">1dp</dimen>
+    <dimen name="text2_margin">5dp</dimen>
+    <dimen name="text2_text_size">15sp</dimen>
+    <dimen name="text3_text_size">15sp</dimen>
+    <dimen name="text3_margin">5dp</dimen>
+    <dimen name="text4_margin">5dp</dimen>
+    <dimen name="text4_text_size">15sp</dimen>
+    <dimen name="view1_height">4dp</dimen>
+    <dimen name="text_or_margin">5dp</dimen>
+    <dimen name="text_or_text_size">18sp</dimen>
+    <dimen name="verticle_view2_height">4dp</dimen>
+    <dimen name="all_day_switch">5dp</dimen>
+    <dimen name="start_date_panel_margin_left">20dp</dimen>
+    <dimen name="text_start_time_margin_right">5dp</dimen>
+    <dimen name="date_divider_view_height">2dp</dimen>
+    <dimen name="date_divider_margin_left">20dp</dimen>
+    <dimen name="switch_text_size">18dp</dimen>
+    <dimen name="starts_text_size">17dp</dimen>
+    <dimen name="ends_text_size">17dp</dimen>
+    <dimen name="all_day_text_size">18dp</dimen>
+    <dimen name="all_day_padding_top">-4dp</dimen>
+    <dimen name="list_view_section_text_size">18dp</dimen>
+    <dimen name="all_emp_listview_horizontal_view_left_margin">10dp</dimen>
+
+    <!--added by monika 10-6-15 -->
+    <dimen name="searchViewBackPressed_right_margin">10dp</dimen>
+    <dimen name="front_view_padding">20dp</dimen>
+    <dimen name="add_favorite_button_size">56dp</dimen>
+    <dimen name="add_favorite_button_margin_bottom">20dp</dimen>
+    <dimen name="add_favorite_button_margin_right">40dp</dimen>
+
+    <!--by monika 11-6-15 -->
+    <dimen name="material_drawer_team_and_name_space">70dp</dimen>
+    <dimen name="side_index_width">18dp</dimen>
+    <dimen name="edit_fav_delete_bt_margin_left">10dp</dimen>
+    <dimen name="fav_rearrange_txt_layout_padding">4dp</dimen>
+
+    <!--Dheeraj-->
+    <dimen name="add_team_contact_text_view_margin_left">30dp</dimen>
+    <dimen name="add_team_contact_person_margin_left">36dp</dimen>
+    <dimen name="add_team_contact_phn_layout_margin_left">15dp</dimen>
+    <dimen name="add_employee_add_margin_left">15dp</dimen>
+    <dimen name="add_team_description_margin_left">43dp</dimen>
+    <dimen name="add_team_contact_manager_margin_left">48dp</dimen>
+
+    <dimen name="edit_team_contact_phn_layout_margin_left">15dp</dimen>
+    <dimen name="add_location_address_layout_margin_left">15dp</dimen>
+    <dimen name="add_location_layout_margin_left">15dp</dimen>
+    <dimen name="add_team_container_margin_left">15dp</dimen>
+    <dimen name="edit_team_container_layout_margin_left">15dp</dimen>
+
+    <!--Monika 19-6-->
+    <dimen name="row_section_left_margin">14dp</dimen>
+    <dimen name="divider_left_margin">14dp</dimen>
+    <dimen name="fName_left_margin">8dp</dimen>
+    <dimen name="lName_left_margin">5dp</dimen>
+    <dimen name="title_left_margin">8dp</dimen>
+    <dimen name="status_left_margin">8dp</dimen>
+    <dimen name="status_top_margin">4dp</dimen>
+    <dimen name="name_top_margin">3dp</dimen>
+
+    <dimen name="group_header_text_title_margin_left">25dp</dimen>
+    <dimen name="status_tab_group_header_text_title_margin_left">26dp</dimen>
+    <dimen name="row_item_layout_height">85dp</dimen>
+    <dimen name="first_name_text_size">18dp</dimen>
+    <dimen name="title_text_size">14dp</dimen>
+    <dimen name="status_txt_size">16dp</dimen>
+    <dimen name="image_frame_layout_width">71dp</dimen>
+    <dimen name="image_frame_layout_height">71dp</dimen>
+    <dimen name="bottom_popup_txt_size">18sp</dimen>
+    <dimen name="edit_text_common_padding">5dp</dimen>
+    <dimen name="location_single_choice_text_width">300dp</dimen>
+    <dimen name="option_popup_title_text_size">18dp</dimen>
+    <dimen name="birth_day_layout_margin_left">10dp</dimen>
+
+    <dimen name="contact_image_frame_layout_width">62dp</dimen>
+    <dimen name="select_contact_image_height_weight">60dp</dimen>
+    <dimen name="edit_profile_notes_margin_bottom">5dp</dimen>
+    <dimen name="dialog_call_option_value_left_margin">5dp</dimen>
+
+
+</resources>

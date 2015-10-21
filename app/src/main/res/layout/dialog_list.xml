@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outmost_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom">
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#ffffff"
+        android:divider="@color/lightGrey"
+        android:listSelector="#ffffff"
+        android:layout_marginBottom="49dp"
+        android:dividerHeight="1dp" />
+
+    <TextView
+        android:id="@+id/id_cancel_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:gravity="center"
+        android:text="@string/cancel"
+        android:textColor="@color/red"
+        android:background="@color/white"
+        android:layout_gravity="bottom"
+        android:textSize="@dimen/option_popup_title_text_size" />
+</FrameLayout>

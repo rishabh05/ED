@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.eworkplaceapps.ed.SocialOrPersonalPhoneLabelActivity">
+    <item android:id="@+id/action_personal_phone"
+        android:title="@string/action_settings"
+        android:orderInCategory="100"
+        android:icon="@drawable/ic_action_accept"
+        app:showAsAction="always" />
+</menu>

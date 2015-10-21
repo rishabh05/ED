@@ -1,0 +1,201 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:wheel="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/darkTeal"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/darkTeal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal">
+
+                <LinearLayout
+                    android:id="@+id/id_toggle_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/team_toggle_off_round_shape"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="4dp">
+
+                    <ToggleButton
+                        android:id="@+id/infoBtn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/team_toggle_on_round_shape"
+                        android:checked="true"
+                        android:textAllCaps="false"
+                        android:textColor="@color/lightTeal"
+                        android:textOff="Info"
+                        android:textOn="Info" />
+
+                    <ToggleButton
+                        android:id="@+id/memBtn"
+                        style="?android:attr/borderlessButtonStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/team_toggle_off_round_shape"
+                        android:textAllCaps="false"
+                        android:textColor="#fff"
+                        android:textOff="Members"
+                        android:textOn="Members" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp">
+
+                <com.mikepenz.materialdrawer.view.BezelImageView
+                    android:id="@+id/team_image"
+                    android:layout_width="@dimen/material_drawer_account_header_compact1"
+                    android:layout_height="@dimen/material_drawer_account_header_compact1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="center"
+                    android:clickable="true"
+                    android:scaleType="fitXY"
+                    app:biv_maskDrawable="@drawable/circle_mask" />
+
+                <TextView
+                    android:id="@+id/team_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/team_image"
+                    android:paddingRight="@dimen/team_name_padding_right"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/name_font_size"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/id_local_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="@dimen/contact_image_view_margin">
+
+
+                <ImageView
+                    android:id="@+id/id_earth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/globe_icon" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/id_earth"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/id_time_zone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5:30PM"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/time_font_size" />
+
+                        <TextView
+                            android:id="@+id/id_time_zone_difference"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingLeft="5dp"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/time_font_size" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/id_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/id_time_zone"
+                        android:layout_marginTop="-3dp"
+                        android:layout_toEndOf="@+id/id_time_zone"
+                        android:layout_toRightOf="@+id/id_earth"
+                        android:text="Monday"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/day_font_size" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <LinearLayout
+                android:id="@+id/outer_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout2"
+                android:layout_marginBottom="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/profile_rounded_rectangle_shape"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/id_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/profile_textview_rounded_rectangle_shape"
+                    android:paddingLeft="@dimen/contact_text_container_margin_left"
+                    android:text="@string/contact"
+                    android:textColor="@color/color_contacts_textview"
+                    android:textSize="@dimen/heading_font_size" />
+
+                <LinearLayout
+                    android:id="@+id/id_team_contact_container"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/contact_container_margin_left"
+                    android:layout_marginLeft="@dimen/contact_container_margin_left"
+                    android:layout_marginTop="@dimen/contact_container_margin_left"
+                    android:background="@drawable/profile_rounded_rectangle_shape"
+                    android:orientation="vertical"></LinearLayout>
+            </LinearLayout>
+            <!--            <com.eworkplaceapps.ed.view.ProgressWheel
+                            android:id="@+id/loading"
+                            android:layout_width="80dp"
+                            android:layout_height="80dp"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            wheel:matProg_barColor="@color/lightTeal"
+                            wheel:matProg_progressIndeterminate="true" />-->
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

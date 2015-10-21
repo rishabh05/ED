@@ -1,0 +1,410 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_status_outer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="-82dp"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <include layout="@layout/status_bar" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/statusPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkTeal"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textStatusTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="@dimen/text_status_title_margin"
+                    android:paddingLeft="10dp"
+                    android:text="@string/whats_your_status"
+
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_status_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/statusList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:animationCache="false"
+                android:divider="@null"
+                android:scrollingCache="false"
+                android:smoothScrollbar="true" />
+
+            <LinearLayout
+                android:id="@+id/whenPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/darkGrey"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textWhen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/text_when_layout_margin"
+                    android:paddingLeft="10dp"
+                    android:text="@string/text_when"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_when_text_size"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tvQuickSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/text_when_layout_margin"
+                android:paddingLeft="10dp"
+                android:text="@string/quick_select"
+                android:textSize="@dimen/all_day_text_size"
+                android:visibility="gone" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view1_height"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/whenSubPanel"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/when_sub_panel_height"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:visibility="gone"
+                android:weightSum="4">
+
+                <LinearLayout
+                    android:id="@+id/layout1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text1_margin"
+                        android:gravity="center"
+                        android:text="@string/this_morning"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/text1_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/horizontal_view_width"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/layout2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text2_margin"
+                        android:gravity="center"
+                        android:text="@string/this_afternoon"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/text2_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/horizontal_view_width"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/text3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/text3_margin"
+                        android:gravity="center"
+                        android:text="@string/all_day_today"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/text3_text_size" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="@dimen/horizontal_view_width"
+                    android:layout_height="fill_parent"
+                    android:background="@color/divider" />
+
+                <LinearLayout
+                    android:id="@+id/layout4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/text4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:text="@string/all_day_tomorrow"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/text4_text_size" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view1_height"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layoutOR"
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@color/divider"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvOR"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/or"
+                    android:textSize="@dimen/all_day_text_size" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/verticle_view2_height"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/togglePanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="15dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvSetDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/select_range"
+                    android:textSize="@dimen/all_day_text_size" />
+
+                <LinearLayout
+                    android:id="@+id/layout_allday"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvSetDuration"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/id_all_day_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/all_day_padding_top"
+                        android:text="@string/all_day"
+                        android:textSize="@dimen/all_day_text_size" />
+
+                    <com.eworkplaceapps.ed.view.SwitchButton
+                        android:id="@+id/sb_ios"
+                        style="@style/SwitchButtonStyle"
+                        android:layout_gravity="center_vertical"
+                        android:layout_toRightOf="@+id/id_all_day_txt"
+                        app:animationVelocity="8"
+                        app:measureFactor="1.5"
+                        app:offDrawable="@drawable/ios_off"
+                        app:onColor="@color/orange"
+                        app:thumbDrawable="@drawable/ios_thumb"
+                        app:thumb_height="42dp"
+                        app:thumb_marginBottom="-8dp"
+                        app:thumb_marginLeft="-5dp"
+                        app:thumb_marginRight="-5dp"
+                        app:thumb_marginTop="-2.5dp"
+                        app:thumb_width="45dp" />
+                </LinearLayout>
+
+                <RadioButton
+                    android:id="@+id/chkSetduration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/tvSetDuration"
+                    android:button="@drawable/unselect"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/view1_height"
+                android:background="@color/divider"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/startDatePanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/start_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="@string/starts"
+                        android:textSize="@dimen/starts_text_size" />
+
+                    <TextView
+                        android:id="@+id/textStartDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/starts_text_size" />
+
+                    <TextView
+                        android:id="@+id/textStartTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/text_start_time_margin_right"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/starts_text_size" />
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/dateDivider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/date_divider_view_height"
+                    android:layout_marginLeft="@dimen/date_divider_margin_left"
+                    android:background="@color/divider"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/endDatePanel"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/end_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerInParent="true"
+                        android:text="Ends"
+                        android:textSize="@dimen/starts_text_size" />
+
+                    <TextView
+                        android:id="@+id/textEndDate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/color_new_status_text"
+                        android:textSize="@dimen/starts_text_size" />
+
+                    <TextView
+                        android:id="@+id/textEndTime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="@dimen/text_start_time_margin_right"
+                        android:background="@android:color/transparent"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/starts_text_size" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/anythingElsePanel"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:background="@color/darkGrey"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textAnythingElse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_margin="5dp"
+                    android:paddingLeft="10dp"
+                    android:text="Anything else?"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtAnythingElse"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="14dp"
+                android:gravity="start"
+                android:hint="Add details here"
+                android:inputType="textCapSentences|textMultiLine"
+                android:maxLength="2000"
+                android:paddingRight="@dimen/edit_text_common_padding"
+                android:textColor="@color/black"
+                android:textColorHint="@color/divider"
+                android:textCursorDrawable="@drawable/cursor_color"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

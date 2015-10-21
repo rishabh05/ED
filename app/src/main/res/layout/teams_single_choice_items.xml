@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.eworkplaceapps.ed.view.CheckableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/singleitemId"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/singleitemCheckBox"
+        android:focusable="false"
+        android:textSize="17dp" />
+
+    <com.eworkplaceapps.ed.view.InertCheckBox
+        android:id="@+id/singleitemCheckBox"
+        android:layout_width="@dimen/radio_button_width"
+        android:layout_height="@dimen/radio_button_height"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:button="@drawable/single_radio_chice"
+        android:focusable="false"
+        android:paddingLeft="5dp"
+        android:paddingBottom="5dp"
+        android:paddingTop="5dp"/>
+    <View
+        android:id="@+id/bottom_view_id"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/singleitemId"
+        android:layout_alignParentBottom="true"
+        android:background="@color/darkGrey"
+         />
+
+</com.eworkplaceapps.ed.view.CheckableRelativeLayout>

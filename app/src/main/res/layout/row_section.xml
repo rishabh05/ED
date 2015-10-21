@@ -1,0 +1,17 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightGrey"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/row_section_left_margin"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="@dimen/list_view_section_text_size"
+        android:textStyle="bold" />
+
+</LinearLayout>
